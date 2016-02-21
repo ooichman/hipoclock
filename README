@@ -1,0 +1,16 @@
+HipoClock is an enterprise-class  central tasks scheduling 
+system written in C for the Linux/Unix platform.
+
+The software is designed around a client-server architecture. 
+The clients initiates the communication with the server over 
+TCP/IP for tasks and clients modification ,status information  
+and tasks return code  while the server contain and manage how 
+and when the tasks will be run on the clients
+
+HipoClock  is designed to be very robust and reliable. The server 
+is designed to work with a database to store the tasks , clients 
+, clients groups , tasks and clients connection and the way the 
+tasks will run by distribution ability and user configured tasks 
+work flow using NSBRC (Next Step By Return code) which is defined 
+as a realm object.
+
