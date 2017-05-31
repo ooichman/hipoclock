@@ -155,12 +155,12 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/oren/Dropbox/projects/hipoclock/missing aclocal-1.13
+ACLOCAL = ${SHELL} /home/oren/Projects/hipoclock/missing aclocal-1.13
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/oren/Dropbox/projects/hipoclock/missing autoconf
-AUTOHEADER = ${SHELL} /home/oren/Dropbox/projects/hipoclock/missing autoheader
-AUTOMAKE = ${SHELL} /home/oren/Dropbox/projects/hipoclock/missing automake-1.13
+AUTOCONF = ${SHELL} /home/oren/Projects/hipoclock/missing autoconf
+AUTOHEADER = ${SHELL} /home/oren/Projects/hipoclock/missing autoheader
+AUTOMAKE = ${SHELL} /home/oren/Projects/hipoclock/missing automake-1.13
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -182,7 +182,7 @@ LDFLAGS =
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/oren/Dropbox/projects/hipoclock/missing makeinfo
+MAKEINFO = ${SHELL} /home/oren/Projects/hipoclock/missing makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
 PACKAGE = hipoclock
@@ -197,10 +197,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 VERSION = 0.01
-abs_builddir = /home/oren/Dropbox/projects/hipoclock/src/server
-abs_srcdir = /home/oren/Dropbox/projects/hipoclock/src/server
-abs_top_builddir = /home/oren/Dropbox/projects/hipoclock
-abs_top_srcdir = /home/oren/Dropbox/projects/hipoclock
+abs_builddir = /home/oren/Projects/hipoclock/src/server
+abs_srcdir = /home/oren/Projects/hipoclock/src/server
+abs_top_builddir = /home/oren/Projects/hipoclock
+abs_top_srcdir = /home/oren/Projects/hipoclock
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -219,22 +219,22 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/oren/Dropbox/projects/hipoclock/install-sh
-libdir = ${exec_prefix}/lib64
+install_sh = ${SHELL} /home/oren/Projects/hipoclock/install-sh
+libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
-localstatedir = /var
+localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
-sharedstatedir = /var
+sharedstatedir = ${prefix}/com
 srcdir = .
-sysconfdir = /etc
+sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../../
 top_builddir = ../..
@@ -258,9 +258,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign src/server/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/server/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign src/server/Makefile
+	  $(AUTOMAKE) --gnu src/server/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
